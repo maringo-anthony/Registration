@@ -15,6 +15,9 @@ class SubmitPageViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.navigationItem.setHidesBackButton(true, animated: true);
+
+        
         ref = Database.database().reference()
         
     }

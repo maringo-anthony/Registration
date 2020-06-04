@@ -18,6 +18,10 @@ class PersonalInfoViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.navigationItem.setHidesBackButton(true, animated: true);
+        
+        
         // If the user already entered data, put it in the field for when they come back
         if( UserDefaults.standard.string(forKey: "userPhone") != nil){
             userPhoneNumberTextField.text = UserDefaults.standard.string(forKey: "userPhone")
@@ -52,8 +56,6 @@ class PersonalInfoViewController: UIViewController {
         let userCity:String = userCityTextField.text!
         let userZip:String = userZipCodeTextField.text!
         
-        
-        
         // Check for empty fields
         if(userPhone.isEmpty  || userAddress.isEmpty || userCity.isEmpty || userZip.isEmpty){
             
@@ -66,6 +68,31 @@ class PersonalInfoViewController: UIViewController {
             UserDefaults.standard.set(userPhone,forKey: "userPhone")
             UserDefaults.standard.set(userAddress, forKey: "userAddress")
             UserDefaults.standard.set(userCity, forKey: "userCity")
+            UserDefaults.standard.set(userZip, forKey: "userZip")
+            
+        }
+        
+    }
+    @IBAction func prevButtonTapped(_ sender: Any) {
+        let userPhone:String = userPhoneNumberTextField.text!
+        let userAddress:String = userAddressTextField.text!
+        let userCity:String = userCityTextField.text!
+        let userZip:String = userZipCodeTextField.text!
+        
+        
+        if(!userPhone.isEmpty){
+            UserDefaults.standard.set(userPhone,forKey: "userPhone")
+            
+        }
+        if(!userAddress.isEmpty){
+            UserDefaults.standard.set(userAddress, forKey: "userAddress")
+            
+        }
+        if(!userCity.isEmpty){
+            UserDefaults.standard.set(userCity, forKey: "userCity")
+            
+        }
+        if(!userZip.isEmpty){
             UserDefaults.standard.set(userZip, forKey: "userZip")
             
         }

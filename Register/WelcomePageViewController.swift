@@ -19,6 +19,10 @@ class WelcomePageViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.navigationItem.setHidesBackButton(true, animated: true);
+
+        
         ref = Database.database().reference()
         
         // If the user already entered data, put it in the field for when they come back
