@@ -20,11 +20,6 @@ class PersonalInfoViewController: UIViewController {
         super.viewDidLoad()
     }
     
-    
-           
-       
-    
-    
     // display alert
     func displayAlertMessage(userMessage: String){
         let myAlert = UIAlertController(title: "Alert", message: userMessage, preferredStyle: UIAlertController.Style.alert)
@@ -44,12 +39,23 @@ class PersonalInfoViewController: UIViewController {
         let userCity:String = userCityTextField.text!
         let userZip:String = userZipCodeTextField.text!
             
-           
+
+        
            // Check for empty fields
         if(userPhone.isEmpty  || userAddress.isEmpty || userCity.isEmpty || userZip.isEmpty){
                
             displayAlertMessage(userMessage: "Please fill in all fields")
-               return
-           }
+            return
+        }
+        else{
+            
+            // save to userdefaults so we can just submit at the end
+            UserDefaults.standard.set(userPhone,forKey: "userPhone")
+            UserDefaults.standard.set(userAddress, forKey: "userAddress")
+            UserDefaults.standard.set(userCity, forKey: "userCity")
+            UserDefaults.standard.set(userZip, forKey: "userZip")
+            
+        }
+        
     }
 }
