@@ -20,6 +20,18 @@ class WelcomePageViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         ref = Database.database().reference()
+        
+        // If the user already entered data, put it in the field for when they come back
+        if( UserDefaults.standard.string(forKey: "userFirst") != nil){
+            userFirstNameTextField.text = UserDefaults.standard.string(forKey: "userFirst")
+        }
+        if(UserDefaults.standard.string(forKey: "userLast") != nil){
+            userLastNameTextField.text = UserDefaults.standard.string(forKey: "userLast")
+        }
+        if(UserDefaults.standard.string(forKey: "userLast") != nil){
+            userEmailTextField.text = UserDefaults.standard.string(forKey: "userEmail")
+        }
+        
 
     }
     

@@ -18,6 +18,19 @@ class PersonalInfoViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        // If the user already entered data, put it in the field for when they come back
+        if( UserDefaults.standard.string(forKey: "userPhone") != nil){
+            userPhoneNumberTextField.text = UserDefaults.standard.string(forKey: "userPhone")
+        }
+        if(UserDefaults.standard.string(forKey: "userAddress") != nil){
+            userAddressTextField.text = UserDefaults.standard.string(forKey: "userAddress")
+        }
+        if(UserDefaults.standard.string(forKey: "userCity") != nil){
+            userCityTextField.text = UserDefaults.standard.string(forKey: "userCity")
+        }
+        if(UserDefaults.standard.string(forKey: "userZip") != nil){
+            userZipCodeTextField.text = UserDefaults.standard.string(forKey: "userZip")
+        }
     }
     
     // display alert
