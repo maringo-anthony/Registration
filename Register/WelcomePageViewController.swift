@@ -35,25 +35,10 @@ class WelcomePageViewController: UIViewController {
             return
         }
         else{
-            // send it to the fire base
-            ref.child("Clients").childByAutoId().setValue("Hello")
-            
-            
             // save to userdefaults so we can just submit at the end
             UserDefaults.standard.set(userEmail,forKey: "userEmail")
             UserDefaults.standard.set(userFirst, forKey: "userFirst")
             UserDefaults.standard.set(userLast, forKey: "userLast")
-            
-            print("Printing array")
-            print(UserDefaults.standard.dictionaryRepresentation().keys)
-            
-            // clear user defaults
-            UserDefaults.standard.removePersistentDomain(forName: Bundle.main.bundleIdentifier!)
-
-            
-            print("Printing array")
-            print(UserDefaults.standard.dictionaryRepresentation().keys)
-            
         }
         
     }

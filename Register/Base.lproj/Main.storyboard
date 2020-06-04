@@ -199,12 +199,12 @@
             </objects>
             <point key="canvasLocation" x="2473.333333333333" y="138.88888888888889"/>
         </scene>
-        <!--Submit View Controller-->
+        <!--Submit Page View Controller-->
         <scene sceneID="X2l-wA-iUL">
             <objects>
-                <viewController id="Rgx-3E-ah2" customClass="SubmitViewController" sceneMemberID="viewController">
+                <viewController id="Rgx-3E-ah2" customClass="SubmitPageViewController" customModule="Register" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3Qv-dR-cPZ">
-                        <rect key="frame" x="0.0" y="0.0" width="712" height="1007"/>
+                        <rect key="frame" x="0.0" y="0.0" width="712" height="1006.9200564096436"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please press submit" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hsq-iy-E5l">
@@ -246,7 +246,7 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
-                                            <action selector="SubmitButtonTapped:" destination="Rgx-3E-ah2" eventType="touchUpInside" id="N3H-GZ-Aa5"/>
+                                            <action selector="SubmitButtonClicked:" destination="Rgx-3E-ah2" eventType="touchUpInside" id="0mj-D8-Ye2"/>
                                         </connections>
                                     </button>
                                 </subviews>

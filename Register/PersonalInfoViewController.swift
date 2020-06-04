@@ -38,12 +38,12 @@ class PersonalInfoViewController: UIViewController {
         let userAddress:String = userAddressTextField.text!
         let userCity:String = userCityTextField.text!
         let userZip:String = userZipCodeTextField.text!
-            
-
         
-           // Check for empty fields
+        
+        
+        // Check for empty fields
         if(userPhone.isEmpty  || userAddress.isEmpty || userCity.isEmpty || userZip.isEmpty){
-               
+            
             displayAlertMessage(userMessage: "Please fill in all fields")
             return
         }
