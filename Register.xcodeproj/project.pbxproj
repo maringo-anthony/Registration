@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A5F84C824896DA0001A035B /* SubmitPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A5F84C724896DA0001A035B /* SubmitPageViewController.swift */; };
 		0A84E2152485F5B60065835B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A84E2142485F5B60065835B /* AppDelegate.swift */; };
 		0A84E2172485F5B60065835B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A84E2162485F5B60065835B /* SceneDelegate.swift */; };
 		0A84E21C2485F5B60065835B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A84E21A2485F5B60065835B /* Main.storyboard */; };
@@ -43,6 +44,7 @@
 
 /* Begin PBXFileReference section */
 		08E7138CD679B5FE9CE54579 /* Pods-Register-RegisterUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Register-RegisterUITests.release.xcconfig"; path = "Target Support Files/Pods-Register-RegisterUITests/Pods-Register-RegisterUITests.release.xcconfig"; sourceTree = "<group>"; };
+		0A5F84C724896DA0001A035B /* SubmitPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubmitPageViewController.swift; sourceTree = "<group>"; };
 		0A84E2112485F5B60065835B /* Register.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Register.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A84E2142485F5B60065835B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0A84E2162485F5B60065835B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -126,6 +128,7 @@
 			isa = PBXGroup;
 			children = (
 				0A84E2472485F6620065835B /* PersonalInfoViewController.swift */,
+				0A5F84C724896DA0001A035B /* SubmitPageViewController.swift */,
 				0A84E2482485F6620065835B /* WelcomePageViewController.swift */,
 				0A84E2142485F5B60065835B /* AppDelegate.swift */,
 				0A84E2162485F5B60065835B /* SceneDelegate.swift */,
@@ -426,6 +429,7 @@
 				0A84E24C2485F6720065835B /* ViewController.swift in Sources */,
 				0A84E24A2485F6620065835B /* WelcomePageViewController.swift in Sources */,
 				0A84E2172485F5B60065835B /* SceneDelegate.swift in Sources */,
+				0A5F84C824896DA0001A035B /* SubmitPageViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

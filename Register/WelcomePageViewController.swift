@@ -7,8 +7,10 @@
 //
 
 import UIKit
+import FirebaseDatabase
 
 class WelcomePageViewController: UIViewController {
+    var ref: DatabaseReference!
 
     @IBOutlet weak var userFirstNameTextField: UITextField!
     @IBOutlet weak var userLastNameTextField: UITextField!
@@ -17,6 +19,8 @@ class WelcomePageViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        ref = Database.database().reference()
+
     }
     
     @IBAction func nextButtonTapped(_ sender: Any) {
@@ -29,6 +33,12 @@ class WelcomePageViewController: UIViewController {
             
             displayAlertMessage(userMessage: "Please fill in all fields")
             return
+        }
+        else{
+            // save to userdefaults so we can just submit at the end
+            UserDefaults.standard.set(userEmail,forKey: "userEmail")
+            UserDefaults.standard.set(userFirst, forKey: "userFirst")
+            UserDefaults.standard.set(userLast, forKey: "userLast")
         }
         
     }
